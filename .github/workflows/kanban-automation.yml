@@ -1,0 +1,66 @@
+name:  Automatización del Kanban Board
+
+on:
+  issues:
+    types:
+      - opened
+      - assigned
+      - closed
+  pull_request:
+    types:
+      - opened
+      - closed
+
+jobs:
+  automate-project-board:
+    runs-on: ubuntu-latest
+    steps:
+      
+      # --- Caso 1: Issue nuevo ---
+      - name: 1. Mover Issue Abierto a 'new issue'
+        if: github.event_name == 'issues' && github.event.action == 'opened'
+        uses: actions/add-to-project@v1.0.1
+        with:
+          project-url: "https://github.com/users/Andrew-Inga/projects/5"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          field-name: "Status" 
+          field-value: "new issue"
+
+      # --- Caso 2: Issue asignado (A "In Progress") ---
+      - name: 2. Mover Issue Asignado a 'In Progress'
+        if: github.event_name == 'issues' && github.event.action == 'assigned'
+        uses: actions/add-to-project@v1.0.1
+        with:
+          project-url: "https://github.com/users/Andrew-Inga/projects/5"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          field-name: "Status"
+          field-value: "In progress" 
+
+      # --- Caso 3: PR Abierto ---
+      - name: 3. Mover PR Abierto a 'In Progress'
+        if: github.event_name == 'pull_request' && github.event.action == 'opened'
+        uses: actions/add-to-project@v1.0.1
+        with:
+          project-url: "https://github.com/users/Andrew-Inga/projects/5"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          field-name: "Status"
+          field-value: "In progress" 
+
+      # --- Caso 4: Issue o PR cerrado (A "Done") ---
+      - name: 4. Mover Issue Cerrado a 'Done'
+        if: github.event_name == 'issues' && github.event.action == 'closed'
+        uses: actions/add-to-project@v1.0.1
+        with:
+          project-url: "https://github.com/users/Andrew-Inga/projects/5"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          field-name: "Status"
+          field-value: "Done" 
+
+      - name: 5. Mover PR Cerrado/Mergeado a 'Done'
+        if: github.event_name == 'pull_request' && github.event.action == 'closed'
+        uses: actions/add-to-project@v1.0.1
+        with:
+          project-url: "https://github.com/users/Andrew-Inga/projects/5"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          field-name: "Status"
+          field-value: "Done"
