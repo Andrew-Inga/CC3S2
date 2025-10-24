@@ -31,7 +31,7 @@
 ####  Parte 4: refinamiento del backlog
 
 - **Triage:** *Deploy* bajo *Persist*, *Remove* a **Icebox**, *Update* tras *Reset*.
-![triage-deploy](./capturas/triage-deploy.png)
+![triage-deploy](./capturas/triage-depley.png)
 
 ![triage-remove](./capturas/triage-remove.png)
 
@@ -52,15 +52,14 @@
 
 #### Ejercicio 1: Epic
 
-- **Enlace:** *Gestión de Contadores*
-- **Captura:** Historias vinculadas + “Generar reportes de uso”.
-- **Archivo:** `capturas/epic.png`
+![epic](./capturas/epic.png)
 
 #### Ejercicio 2: Etiquetas
 
 - **Labels:** *High/Medium/Low Priority*, *In Review*, *Blocked*, *Ready for Testing*.
-- **Captura:** `capturas/nuevas-labels.png`
-- **Tablero:** `capturas/tablero-labels-ej2.png`
+![](./capturas/new-labels.png)
+
+![](./capturas/tablero-ej2.png)
 
 #### Ejercicio 3: GitHub Actions
 
