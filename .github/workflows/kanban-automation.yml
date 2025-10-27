@@ -22,7 +22,7 @@ jobs:
         uses: actions/add-to-project@v1.0.1
         with:
           project-url: "https://github.com/users/Andrew-Inga/projects/5"
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.PROJECT_ACCESS_TOKEN }}
           field-name: "Status" 
           field-value: "new issue"
 
@@ -32,7 +32,7 @@ jobs:
         uses: actions/add-to-project@v1.0.1
         with:
           project-url: "https://github.com/users/Andrew-Inga/projects/5"
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.PROJECT_ACCESS_TOKEN }}
           field-name: "Status"
           field-value: "In progress" 
 
@@ -42,7 +42,7 @@ jobs:
         uses: actions/add-to-project@v1.0.1
         with:
           project-url: "https://github.com/users/Andrew-Inga/projects/5"
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.PROJECT_ACCESS_TOKEN }}
           field-name: "Status"
           field-value: "In progress" 
 
@@ -52,7 +52,7 @@ jobs:
         uses: actions/add-to-project@v1.0.1
         with:
           project-url: "https://github.com/users/Andrew-Inga/projects/5"
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.PROJECT_ACCESS_TOKEN }}
           field-name: "Status"
           field-value: "Done" 
 
@@ -61,6 +61,6 @@ jobs:
         uses: actions/add-to-project@v1.0.1
         with:
           project-url: "https://github.com/users/Andrew-Inga/projects/5"
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.PROJECT_ACCESS_TOKEN }}
           field-name: "Status"
-          field-value: "Done"
+          field-value: "Done"          
