@@ -62,8 +62,8 @@
 ![](./capturas/tablero-ej2.png)
 
 #### Ejercicio 3: GitHub Actions
-
-- **Enlace:** `.github/workflows/kanban-automation.yml`
+[enlace del workflow](https://github.com/Andrew-Inga/CC3S2/blob/main/.github/workflows/kanban-automation.yml)
+Este es un cambio para probar la automatización del PR.
 -  **Captura:** YAML y prueba de automatización.
 - **Archivos:** `capturas/workflow.png`, `capturas/automation-proof.png`
 
