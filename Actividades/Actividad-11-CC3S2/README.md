@@ -62,27 +62,26 @@
 ![](./capturas/tablero-ej2.png)
 
 #### Ejercicio 3: GitHub Actions
-
-- **Enlace:** `.github/workflows/kanban-automation.yml`
+[enlace del workflow](https://github.com/Andrew-Inga/CC3S2/blob/main/.github/workflows/kanban-automation.yml)
+Este es un cambio para probar la automatización del PR.
 -  **Captura:** YAML y prueba de automatización.
-- **Archivos:** `capturas/workflow.png`, `capturas/automation-proof.png`
+![](./capturas/workflow.png)
+![](./capturas/automatization-prrof.png)
+![](./capturas/automatization-proof2.png)
+
 
 #### Ejercicio 4: Tiempo
 
 - **Campo:** Esfuerzo estimado (horas).
-- **Captura:** `capturas/campo-esfuerzo.png`
--  **Resumen:** *Counter:* **4h** estimado, **5h** real.
-
+![](./capturas/campo-esfuerzo.png)
 #### Ejercicio 5: Stakeholder Feedback
 
-- **Enlace:** *Exportar a CSV*
-- **Captura:** Historia priorizada.
-- **Archivo:** `capturas/export-csv.png`
-
+![](./capturas/exportar-csv.png)
 #### Ejercicio 6: Análisis
 
-- **Métricas:** *Cycle time*, cuellos de botella (**Review/QA: 3 días**).
-- **Archivos:** `capturas/metricas.png`, `capturas/reporte-metricas.txt`
+- **Métricas:** *Cycle time*, cuellos de botella 
+![](./capturas/metrica.png)
+![](./capturas/metrica-repositorio.png)
 
 
 
