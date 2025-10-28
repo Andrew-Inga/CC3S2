@@ -2,7 +2,7 @@
 
 - Nombre: Andrew Owim Inga Rojas 
 - Fecha: 21/10/2025
-- Tiempo total: 
+- Tiempo total: 5h
 - Entorno usado: IDE Visual Studio Code y Github
 ## Instrucciones
 
